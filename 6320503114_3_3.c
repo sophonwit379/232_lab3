@@ -3,7 +3,7 @@ int main()
 {
     int n,i=2,tmp;
     scanf("%d",&n);
-    while(1)
+    while(n!=0)
     {
         if(n%i==0)
         {
@@ -13,7 +13,7 @@ int main()
         else if(n==1)
         {
             printf("%d",n-1);
-            break;
+            n--;
         }
         else
         {
