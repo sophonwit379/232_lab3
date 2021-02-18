@@ -4,19 +4,19 @@ int main()
     int n,i=2,tmp,show,count=0;
     scanf("%d",&n);
     show=n;
-    while(n!=0)
+    while(show!=0)
     {
-        if(n%i==0)
+        if(show%i==0)
         {
-            n/=i;
-            if(tmp==i || count>3)
+            show/=i;
+            if(tmp==i || count!=3)
             {
-                printf("%d is not a Lucky Number.",show);
+                printf("%d is not a Lucky Number.",n);
                 break;
             }
-            if(tmp!=i && count<=3 && n==1)
+            if(tmp!=i && count==3 && show==1)
             {
-                printf("%d a Lucky Number.",show);
+                printf("%d a Lucky Number.",n);
                 break;
             }
             tmp=i;
