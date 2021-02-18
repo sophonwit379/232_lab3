@@ -3,18 +3,22 @@ int main()
 {
     int n,i=2,tmp;
     scanf("%d",&n);
-    while(n>=0)
+    while(1)
     {
         if(n%i==0)
         {
-            printf("%d",i);
-            n=n/i;
+            printf("%d\n",i);
+            n/=i;
+        }
+        else if(n==1)
+        {
+            printf("%d",n-1);
+            break;
         }
         else
         {
             i++;
         }
-
 
     }
 
