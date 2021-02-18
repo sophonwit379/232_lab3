@@ -14,13 +14,13 @@ int main()
     max=tmp[0];
     for(i=1;i<5;i++)
     {
-        if(max>tmp[i])
+        if(max<tmp[i])
+        {
             max=tmp[i];
+            j=i;
+        }
 
     }
-
-
-
-
+    printf("%d %d",j+1,max);
 
 }
