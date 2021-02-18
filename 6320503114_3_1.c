@@ -14,13 +14,14 @@ int main()
     max=tmp[0];
     for(i=1;i<5;i++)
     {
+        loca=1;
         if(max<tmp[i])
         {
             max=tmp[i];
-            loca=i;
+            loca=i+1;
         }
 
     }
-    printf("%d %d",loca+1,max);
+    printf("%d %d",loca,max);
 
 }
