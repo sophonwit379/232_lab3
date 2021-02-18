@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int i,j,max;
+    int i,j,max,loca;
     int com[5][4],tmp[5]={0};
     for(i=0;i<5;i++)
     {
@@ -17,10 +17,10 @@ int main()
         if(max<tmp[i])
         {
             max=tmp[i];
-            j=i;
+            loca=i;
         }
 
     }
-    printf("%d %d",j+1,max);
+    printf("%d %d",loca+1,max);
 
 }
