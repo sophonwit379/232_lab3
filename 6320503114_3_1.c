@@ -12,9 +12,9 @@ int main()
         }
     }
     max=tmp[0];
+    loca=1;
     for(i=1;i<5;i++)
     {
-        loca=1;
         if(max<tmp[i])
         {
             max=tmp[i];
